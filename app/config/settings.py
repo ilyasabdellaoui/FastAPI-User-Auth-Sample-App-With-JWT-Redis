@@ -14,13 +14,13 @@ JWT_REFRESH_SECRET_KEY = os.getenv("JWT_REFRESH_SECRET_KEY")
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 EMAIL_FROM = os.getenv("EMAIL_FROM")
 
-SERVER_URL = "http://localhost:8000"
-FRONT_END_URL = "http://127.0.0.1:5500"
+SERVER_URL = os.getenv("SERVER_URL")
+FRONT_END_URL = os.getenv("FRONT_END_URL")
 CLEANUP_ROUTE = "/cleanup-tokens"
 
 # CORS settings
 ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",  
+    FRONT_END_URL,  
 ]
 
 # Other settings
