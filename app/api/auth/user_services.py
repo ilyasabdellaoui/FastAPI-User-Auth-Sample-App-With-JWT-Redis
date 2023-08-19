@@ -173,7 +173,7 @@ def send_password_reset_email(db, user, FRONT_END_URL):
                     <p>{reset_link}</p>
                     <p style="font-size: 16px;">This link will expire in 15 minutes for security reasons.</p>
                     <p style="font-size: 16px;">If you did not request a password reset, please ignore this email.</p>
-                    <p class="footer">Best regards,<br>BudgetTrackio Team</p>
+                    <p class="footer">Best regards,</p>
                 </div>
             </body>
             </html>
